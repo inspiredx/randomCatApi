@@ -19,26 +19,11 @@ body {
 }
 
 .image {
-    width: 800px;
+    width: 50%;
     height: 600px;
     margin: 3%;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
-
-/* .btn {
-    display: inline-block;
-    background: #8C959D;
-    color: #fff;
-    padding: 1rem 1.5rem;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-.btn:hover {
-    background: black;
-    box-shadow: -4px 11px 48px 57px rgba(244, 54, 0, 0.2);
-} */
 
 .gradient-button {
     text-decoration: none;
@@ -60,4 +45,26 @@ body {
 .gradient-button:hover {
     background-position: right center;
     box-shadow: 0px 2px 8px 27px rgba(52, 143, 214, 0.21);
+}
+
+@media screen and (max-width: 1024px) {
+    .image {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .image {
+        width: 700px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .image {
+        width: 100%;
+        margin: 0;
+    }
 }
